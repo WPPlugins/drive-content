@@ -1,0 +1,35 @@
+<form id="drive-content-authentication" method="get" enctype="multipart/form-data">
+    <div class="modal-header">
+        <h4 class="modal-title">Drive Content - Login</h4>
+    </div>
+    <div class="modal-body">
+        {%  if message|default('') != '' %}
+        <div class="alert alert-danger">
+            {{ message|default('') }}
+        </div>
+        {%  endif %}
+        <div class="col-xs-6 border-right">
+            <p>Login with your AutoNetTv Drive Credentials</p>
+            <div>
+                <label for="username">Username:</label>
+                <br />
+                <input type="text" name="username" />
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <br />
+                <input type="password" name="password">
+            </div>
+        </div>
+        <div class="col-xs-6 text-center">
+            <a href="http://www.autonettv.com/products/drive-content/" id="drive-register-link">
+                <img src="{{ imgUrl }}" alt="Register For Drive Content" />
+                <br />
+                Register for Drive Content
+            </a>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="submit" class="button button-primary button-large">Login</button>
+    </div>
+</form>

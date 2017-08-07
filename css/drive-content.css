@@ -1,0 +1,65 @@
+.drive-content-block-entry{
+    float: left;
+    padding: 10px 5px;
+    text-align: center;
+}
+.img-block-wrapper{
+    height: 128px;
+    width: 170px;
+    white-space: nowrap;
+}
+
+.helper{
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.img-block-wrapper img{
+    max-height: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.drive-content-blocks{
+    max-height: 400px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.col-xs-6{
+    width: 50%;
+    float: left;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#drive-register-link{
+    text-decoration: none;
+}
+
+.modal-body{
+    overflow: hidden;
+}
+
+.alert.alert-danger{
+    background: #f2dede;
+    color: #a94442;
+    border: 1px #ebccd1 solid;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+#drive-content-authentication input{
+    width: 100%;
+}
+
+.col-xs-6.border-right{
+    border-right: 1px #ccc solid;
+    width: 49%;
+    padding-right: 1%;
+}

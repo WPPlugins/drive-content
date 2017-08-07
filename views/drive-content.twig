@@ -1,0 +1,29 @@
+<div class="modal-header">
+    <h4 class="modal-title">Drive Content Blocks</h4>
+</div>
+<div class="modal-body">
+    <div class="drive-content-blocks">
+        {% for entry in entries %}
+        <div class="drive-content-block-entry">
+            <label>
+                <div class="img-block-wrapper">
+                    <span class="helper"></span>
+                    <img src="{{ thumbUrl~entry.media_id~'.jpg' }}" alt="" />
+                </div>
+                <br />
+                <input type="radio" name="drive-content-block" value="{{entry.embed_url}}" {% if loop.first %}checked="checked"{% endif %} %} />
+            </label>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<div class="modal-footer">
+    <button data-width="300" data-height="225" class="insert-drive-content-shortcode button button-primary">Small Frame</button>
+    <button data-width="600" data-height="450" class="insert-drive-content-shortcode button button-primary">Medium Frame</button>
+    <button data-width="900" data-height="675" class="insert-drive-content-shortcode button button-primary">Large Frame</button>
+    <button data-width="1200" data-height="900" class="insert-drive-content-shortcode button button-primary">X-Large Frame</button>
+    <br />
+    <br />
+    <input type="number" name="frame-height" placeholder="Height"/><input type="number" name="frame-width" placeholder="Width"/>
+    <button id="drive-content-small-frame" class="insert-drive-content-shortcode button button-primary">Custom Size Frame</button>
+</div>
